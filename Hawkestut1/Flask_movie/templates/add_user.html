@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+        <label> BEER++</<label>
+        <br />
+        <br />
+        <br />
+<body>
+    </form>
+    <label>NEW PISSHEADS:</label>
+    <form method="post" action="/post_user">
+        <label>Name:</label>
+        <input id="username" name="username" type="text" />
+        <label>Email:</label>
+        <input id="email" name="email" type="text" />
+        <input type="submit" />
+    </form>
+        <br />
+        <label>EXISTING PISSHEADS:</label>
+    {% for user in myUser %}
+        <li>{{user.id}}. {{user.username }} - {{ user.email }}</li>
+    {% endfor %}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+<title> Javascript Cofirmation Box </title>
+<body>
+    <script>
+    var x = confirm("hello");
+
+    </script>
+    <!-- <h1> Javascript Confirmation Box</h1> -->
+
+
+
+
+
+
+    # user = User.query.get(request.form["id"]) #trying to set beers_outstanding value default to zero on creation of new id so that Pisshead debt does not crash html code (needs an integer to work)
+    # user.beers_outstanding = 0 #as above
+
+
+
+  <!-- <input type="hidden" name=id value="{{user.id}}"/> <!trying to set beers_outstanding to 0 on creation so that our multiplication function below does not crash !> -->

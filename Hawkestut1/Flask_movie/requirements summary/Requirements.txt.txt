@@ -1,0 +1,10 @@
+Bit of a guess..
+install Virtualenv
+activate
+Flask
+flask-SQLAlchemy
+Jinja2(isn't this auto?)
+SQLAlchemy
+'from app import db'
+install psycopg2 (in env\lib\site-packages)
+'db.create_all()'
